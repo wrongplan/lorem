@@ -1,0 +1,61 @@
+// import base files
+@import 'base/reset.less';
+@import 'base/grid12.less';
+@import 'base/vars.less';
+@import 'base/fonts.less'; 
+@import 'base/reusable.less';
+ 
+ 
+/* base styles */
+.left { float: left; }  
+.right { float: right; }
+.clear { clear: both; }
+.center { text-align: center; }
+
+html, body {
+	&.blocked {
+		overflow: hidden;
+	}
+}
+body {
+	font-family: @main-font;
+	font-weight: normal;
+	overflow-x: hidden;
+	// antialiasing
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+// inputs
+input, textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 0;
+	margin: 0;
+}
+input {
+	&[type="submit"] {
+		cursor: pointer;
+	}
+}
+
+// selection
+::selection {
+	background: @primary-color;
+	color: @bg-color;
+}
+// inputs : autofill
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	-webkit-text-fill-color: @bg-color;
+	-webkit-box-shadow: 0 0 0px 1000px @primary-color inset;
+	transition: background-color 5000s ease-in-out 0s;
+}

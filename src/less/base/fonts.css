@@ -1,0 +1,13 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=e0220d04-5fac-41a0-8bc2-cb6c0b8ffdd5");
+@font-face {
+  font-family: "Avenir";
+  src: url("../../fonts/ebf375c1-452c-47da-aaf4-cf05c127a4cd.eot");
+  src: url("../../fonts/ebf375c1-452c-47da-aaf4-cf05c127a4cd.eot?#iefix") format("eot"), url("../../fonts/46d9ac88-dbbb-4a0e-afa2-aa57045a2d12.woff2") format("woff2"), url("../../fonts/b28810ec-90f0-4c3f-ac0e-f47ad568fe27.woff") format("woff"), url("../../fonts/2c8bff81-d390-4ce5-8611-d4932e64d05d.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../fonts/5b3067c0-6044-4042-9941-bea1a5354a1f.eot?#iefix");
+  src: url("../../fonts/5b3067c0-6044-4042-9941-bea1a5354a1f.eot?#iefix") format("eot"), url("../../fonts/ad58244e-b79c-4260-a588-c4a890416979.woff2") format("woff2"), url("../../fonts/0b167d86-9493-44ec-87e7-071d78b0dedc.woff") format("woff"), url("../../fonts/b4548fbc-cd54-488b-90b4-b78ba824cdcb.ttf") format("truetype");
+  font-weight: bold;
+}

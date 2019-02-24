@@ -1,0 +1,178 @@
+.transition {
+	transition: all 0.2s ease-in-out;
+}
+
+.transformFix {
+	transform: translate3d(0, 0, 0);
+}
+
+.flex-row {
+	@media @sm {
+		display: flex;
+	}
+}
+
+.main-gradient(@deg) {
+	background: linear-gradient(@deg , #0166af, #0870ad 13%, #137eac 28%, #238faa 48%, #39a2a8 68%, #4aaea6 87%);
+}
+
+.main-gradientWhite(@deg) {
+	background: linear-gradient(@deg , #fff, #48ada6 75%, #1782ac);
+	box-shadow: 0 0 16px 0 rgba(102, 228, 207, 0.35);
+}
+
+
+.gradientBelt {
+	.main-gradientWhite(271deg);
+
+	@media @xs {
+		width: 70px;
+		height: 6px;
+	}
+
+	width: 85px;
+	height: 8px;
+	// margin-top: @mt;
+	// margin-bottom: @mb;
+	display: block;
+	content: "";
+	margin: 0 auto;
+}
+
+.gradientBelt {
+	width: 85px;
+	height: 8px;
+	box-shadow: 0 0 16px 0 rgba(102, 228, 207, 0.35);
+}
+
+.buttonTaxes {
+	width: 263px/1.25;
+	padding: 0 10px;
+	height: 55px;
+	border-radius: 8px;
+	box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: @bg-alt;
+	text-align: center;
+
+	@media @md {
+		width: 263px;
+	}
+
+}
+
+.buttonTaxesTitle {
+	font-size: 16px;
+	color: @primary-color;
+	font-weight: bold;
+	letter-spacing: 0.2px;
+}
+
+.button {
+	position: relative;
+	margin-top: 35px;
+
+	@media @md {
+		margin-top: ~"calc(10px + 33px)";
+	}
+
+	&__reusable {
+		padding: 0 18px;
+		width: 80px;
+		height: 46px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		z-index: 3;
+
+
+		border-radius: 8px;
+		background: @bg-alt;
+		box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.1);
+
+		@media @md {
+			padding: 0 32px;
+			width: 118px;
+			height: 69px;
+		}
+
+		&__arrow {
+			width: 14px;
+			height: auto;
+
+			@media @md {
+				width: 17px
+			}
+
+			path {
+				fill: @border-color;
+				fill: #0166af;
+				// fill: red;
+			}
+
+
+		}
+
+	}
+
+	&__reusable__prev {
+		.button__reusable__arrow {
+			transform: rotate(-180deg);
+
+			path {
+				transition: 0.2s;
+				fill: #0166af;
+			}
+
+		}
+
+		&:hover {
+			cursor: pointer;
+
+			// path {
+			// 	fill: #0166af;
+			// }
+		}
+	}
+
+	&__reusable__next {
+		.button__reusable__arrow {
+
+			path {
+				transition: 0.2s;
+			}
+		}
+		&:hover {
+			cursor: pointer;
+
+			path {
+				fill: #0166af;
+			}
+		}
+	}
+
+
+	&__shadow {
+		width: 80px;
+		height: 46px;
+		box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.1);
+		background-color: @bg-alt;
+		left: -6px;
+		top: -6px;
+		content: "";
+		display: block;
+		position: absolute;
+		// z-index: -1;
+		border-radius: 8px;
+
+		@media @md {
+			width: 118px;
+			height: 69px;
+			left: -10px;
+			top: -10px;
+		}
+	}
+}
