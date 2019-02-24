@@ -1,7 +1,3 @@
-"use strict";
-
-
-
 
 // global variable for the player
 var player;
@@ -39,7 +35,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 
-jQuery(document).ready(function ($) {
+
 
 	$(".review__rodo").on("click", function () {
 		$(".review__tick").toggleClass("active");
@@ -247,4 +243,3 @@ jQuery(document).ready(function ($) {
 	
 
 
-});
